@@ -9,6 +9,7 @@ long repeatsChristmas = 0;
 long repeatsDiwali = 0;
 long repeatsHalloween = 0;
 
+
 // Current holiday repeat target
 long currentRepeats = 50;
 long currentIteration = 0;
@@ -69,6 +70,7 @@ void switchHoliday(String holidayName, long &holidayCounter) {
 }
 
 // ---------------- Holiday Patterns ----------------
+// Christmas: Sequential chase
 void christmasPattern() {
   for (int i = 0; i < numLEDs; i++) {
     digitalWrite(leds[i], HIGH); delay(100); digitalWrite(leds[i], LOW);
